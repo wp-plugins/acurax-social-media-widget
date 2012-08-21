@@ -1,7 +1,7 @@
 ﻿=== Acurax Social Media Widget ===
 Contributors: Acurax 
 
-Tags: Acurax Social Media Widget,social,social media widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,facebook profile url,google plus,google+,google plus button
+Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,facebook profile url,google plus,google+,google plus button
 Requires at least: 2.8
 Tested up to: 3.4.1
 Stable tag: trunk
