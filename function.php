@@ -7,6 +7,7 @@ $acx_widget_si_theme = get_option('acx_widget_si_theme');
 $acx_widget_si_credit = get_option('acx_widget_si_credit');
 $acx_widget_si_facebook = get_option('acx_widget_si_facebook');
 $acx_widget_si_youtube = get_option('acx_widget_si_youtube');
+$acx_widget_si_twitter = get_option('acx_widget_si_twitter');
 $acx_widget_si_linkedin = get_option('acx_widget_si_linkedin');
 $acx_widget_si_gplus = get_option('acx_widget_si_gplus');
 $acx_widget_si_pinterest = get_option('acx_widget_si_pinterest');
@@ -33,7 +34,7 @@ function acurax_si_widget_simple($theme)
 {
 
 	// Getting Globals *****************************	
-	global $acx_widget_si_theme, $acx_widget_si_credit , $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube, 		
+	global $acx_widget_si_theme, $acx_widget_si_credit , $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube,$acx_widget_si_gplus,
 	$acx_widget_si_linkedin, $acx_widget_si_pinterest, $acx_widget_si_feed, $acx_widget_si_icon_size;
 	// *****************************************************
 	if ($theme == "") { $acx_widget_si_touse_theme = $acx_widget_si_theme; } else { $acx_widget_si_touse_theme = $theme; }
