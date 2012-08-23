@@ -93,4 +93,4 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 1. Plugin Settings Page (Low Quality Screenshot To Load Fast)
 2. Icon Settings Style/Theme and Size Selection Options (Low Quality Screenshot To Load Fast)
 3. social media Widget Settings
-4. Preview
+4. Social Media Widget Preview
