@@ -6,11 +6,11 @@ Requires at least: 2.8
 Tested up to: 3.4.1
 Stable tag: trunk
 
-Simple Wordpress Plugin Where You Can Use Widget To Show Essential Social Media Icons - Can Select Icon Style , Size
+Simple Wordpress Social Media Widget Plugin Where You Can Use Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and alignment.
 
 == Description ==
 
-A Simple Wordpress Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus...
+A Simple Wordpress Social Media Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus...
 
 You can make the icons to appear using widgets, on your sidebar.
 
