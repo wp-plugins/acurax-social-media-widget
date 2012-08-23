@@ -10,9 +10,9 @@ Simple Wordpress Social Media Widget Plugin Where You Can Use Widget To Show Ess
 
 == Description ==
 
-A Simple Wordpress Social Media Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus...
+A Simple Wordpress Social Media Widget Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus...
 
-You can make the icons to appear using widgets, on your sidebar.
+You can make the icons to appear using widget , on your sidebar.
 
 	★ Multiple Social Media Widget Support
 
@@ -43,7 +43,7 @@ This Social Media Widget Plugin is developed and maintained by [Acurax Internati
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
-Then Visit Plugin Configuration Settings and select a theme and size for icons. configure your social profile url. You are done!
+Then Visit Plugin Configuration Settings and select a theme and size for icons for the social media widget. configure your social profile url. You are done!
 
 You need to go to Apperance >> Widgets to add "Acurax Social Media Widget" Widget to your sidebar
 
