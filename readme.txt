@@ -22,7 +22,7 @@ You can make the icons to appear using widgets, on your sidebar.
 	
 	★ Easy to configure user interface
 	
-	★ Icon Size Selection Support
+	★ Social Media Icon Size Selection Support
 	
 	★ Support Essential Social Medias Only
 	
