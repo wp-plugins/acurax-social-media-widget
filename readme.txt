@@ -56,21 +56,21 @@ After Installation,Dont Forgot to Cast Your Vote on Combatibility :) Thanks for 
 
 To hide an icon, Just dont give any value for that button link.. it will automatically gets hiden.
 
-= How can i use the plugin widgets? =
+= How can i use the social media widget? =
 
-Plugin Support Social Media Widget, You can have **many number of widgets where on each widget you can configure the Social Media Icons size and Icon Design/Style**.
+Plugin Support Social Media Widget, You can have **many number of widgets where on each social media widget you can configure the Social Media Icons size and Icon Design/Style**.
 
-To add a widget to your sidebar.. you theme must support sidebars. Go to **Apperance >> Widgets**,to add "Acurax Social Media Widget" widget to your sidebar.
+To add a social media widget to your sidebar.. you theme must support sidebars. Go to **Apperance >> Widgets**,to add "Acurax Social Media Widget" widget to your sidebar.
 
 = How Many Social Media Widget Can i use? =
 
-Plugin Support More than one instance of Social Media Widgets, SO you can use as many as widget on your sidebars.
+Plugin Support More than one instance of Social Media Widgets, SO you can use as many social media widget on your sidebars and each can have seperate icon style or size.
 
 = How can i help the development of this plugin? =
 
-Acurax Provide Most of all the wordpress related services like website design and development including plugin development, theme design and coding, Graphics Design like header image designing etc. we can do your projects. So here you get what u needs to get done and we getting business so a part of that can be used for the time that we spend to develop plugins like this
+Acurax Provide Most of all the wordpress related services like website design and development including plugin development, theme design and coding, Graphics Design range from header image designing to complete design and marketing of a website. we can do your projects. So here you get what u needs to get done and we getting business so a part of that can be used for the time that we spend to develop plugins like this social media widget.
 
-= There are a lot of other social icons plugins, but why this plugin? =
+= There are a lot of other social media icon plugins, but why this plugin? =
 
 Most of all the plugins have more and more options which is only easly understandable by advanced users, those have a bunch of social media profile integrations. But in our case we choosen the must to have icons and made it perfect styling.. More icons on website make it look bad.. So use the essentials with sexy display.
 
@@ -92,5 +92,5 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 1. Plugin Settings Page (Low Quality Screenshot To Load Fast)
 2. Icon Settings Style/Theme and Size Selection Options (Low Quality Screenshot To Load Fast)
-3. Widget Settings
+3. social media Widget Settings
 4. Preview
