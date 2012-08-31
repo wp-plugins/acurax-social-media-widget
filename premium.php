@@ -19,6 +19,10 @@ Thanks again for using the plugin. we will never show the mesage again.
 <p><b>This Plugin is the basic widget version of floating social media icon wordpress plugin. This plugin only support the icon pack and the widget. Premium Version of This plugin includes all the features of floating social media icon and a lot more. Premium version is same as the premium version of floating social media icon wordpress plugin.</b></p>
 <?php 
 socialicons_widget_comparison();
+?>
+<div align="center"><img style="border:1px solid gray;box-shadow:1px 1px 20px -9px black;border-radius: 8px 8px 8px 8px;" src="<?php echo plugins_url('images/money_back.jpg', __FILE__); ?>"></div>
+<?php
 socialicons_widget_comparison(1);
 ?>
+<div align="center"><img style="border:1px solid gray;box-shadow:1px 1px 20px -9px black;border-radius: 8px 8px 8px 8px;" src="<?php echo plugins_url('images/money_back.jpg', __FILE__); ?>"></div>
 </div>
