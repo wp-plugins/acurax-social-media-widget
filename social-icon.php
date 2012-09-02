@@ -126,8 +126,8 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 </p>
 
 <div id="acx_fsmi_premium">
-<a style="margin: 8px 0px 0px 10px; float: left; font-size: 16px; font-weight: bold;" href="admin.php?page=Acurax-Social-Widget-Premium" target="_blank">Fully Featured - Premium Acurax Social Media Widget</a>
-<a style="margin: -14px 0px 0px 10px; float: left;" href="admin.php?page=Acurax-Social-Widget-Premium" target="_blank"><img src="<?php echo plugins_url('images/yellow.png', __FILE__);?>"></a>
+<a style="margin: 8px 0px 0px 10px; float: left; font-size: 16px; font-weight: bold;" href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=highlight&utm_campaign=widget_plugin" target="_blank">Fully Featured - Premium Acurax Social Media Widget</a>
+<a style="margin: -14px 0px 0px 10px; float: left;" href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=highlight_yellow&utm_campaign=widget_plugin" target="_blank"><img src="<?php echo plugins_url('images/yellow.png', __FILE__);?>"></a>
 </div> <!-- acx_fsmi_premium -->
 
 <?php echo "<h2>" . __( 'Acurax Social Icons Options', 'acx_widget_si_config' ) . "</h2>"; ?>
