@@ -14,7 +14,7 @@ A Simple Wordpress Social Media Widget Plugin Which Allow You To Add Widget Whic
 
 You can make the icons to appear using widget , on your sidebar.
 
-	★ Multiple Social Media Widget Support
+	★ Multiple Social Media Icon Widget Support
 
 	★ Each Social Media Widget Can Have Seperate Icon Theme and Icon Size 
 	
@@ -52,11 +52,11 @@ After Installation,Dont Forgot to Cast Your Vote on Combatibility :) Thanks for 
 
 == Frequently Asked Questions ==
 
-= How can i hide an icon? =
+= How can i hide a social media icon? =
 
 To hide an icon, Just dont give any value for that button link.. it will automatically gets hiden.
 
-= How can i use the social media widget? =
+= How can i use the social media icon widget? =
 
 Plugin Support Social Media Widget, You can have **many number of widgets where on each social media widget you can configure the Social Media Icons size and Icon Design/Style**.
 
@@ -86,11 +86,15 @@ You need to visit the plugin settings page once after upgrading to complete the 
 
 No, It will not.. :)
 
+= Can i have custom css for the social media icon widget? =
+
+Currently, our settings page have no option, but we have given proper id and class for each element and so it will be possible to add css styles in your themes stylesheet.. :)
+
 Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an Email") and we shall get back to you with the answers.
 
 == Screenshots ==
 
 1. Plugin Settings Page (Low Quality Screenshot To Load Fast)
 2. Icon Settings Style/Theme and Size Selection Options (Low Quality Screenshot To Load Fast)
-3. social media Widget Settings
+3. social media Icon Widget Settings
 4. Social Media Widget Preview
