@@ -94,7 +94,7 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 == Screenshots ==
 
-1. Plugin Settings Page (Low Quality Screenshot To Load Fast)
-2. Icon Settings Style/Theme and Size Selection Options (Low Quality Screenshot To Load Fast)
-3. social media Icon Widget Settings
-4. Social Media Widget Preview
+1. Acurax Social Media Widget Plugin Settings Full Page (Low Quality Screenshot To Load Fast)
+2. Widget Preview - [INSET: Widget Settings] (Low Quality Screenshot To Load Fast)
+3. Icon Style/Themes Available With This Plugin. (Low Quality Screenshot To Load Fast)
+4. Icon Size Selection, Reorder Icons Drag and Drop, Social Media Profile Link Settings. (Low Quality Screenshot To Load Fast)
