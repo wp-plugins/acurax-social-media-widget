@@ -69,6 +69,8 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 		$social_widget_icon_array_order = array(0,1,2,3,4,5,6);
 		$social_widget_icon_array_order = serialize($social_widget_icon_array_order);
 		update_option('social_widget_icon_array_order', $social_widget_icon_array_order);
+		$acx_fsmi_si_current_version = "1.1.5";  // Current Version
+		update_option('acx_fsmi_si_current_version', $acx_fsmi_si_current_version);
 	} else 
 	{
 		// Counting and Adding New Keys (UPGRADE PURPOSE)
@@ -116,15 +118,27 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 	
 	
 <div class="wrap">
+<?php
+$acx_si_smw_acx_service_banners = get_option('acx_si_smw_acx_service_banners');
+if ($acx_si_smw_acx_service_banners != "no") { ?>
 <p class="widefat" style="padding:8px;width:99%;height: 75px;">
-	<b>Acurax Services >> </b><br>
-	<a href="http://www.acurax.com/services/wordpress-designing-experts.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wtd" style="background:url(<?php echo plugins_url('images/wtd.jpg', __FILE__);?>);"></a>
-	
-	<a href="http://www.acurax.com/services/web-designing.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wd" style="background:url(<?php echo plugins_url('images/wd.jpg', __FILE__);?>);"></a>
-	<a href="http://www.acurax.com/social-media-marketing-optimization/social-profile-design.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="spd" style="background:url(<?php echo plugins_url('images/spd.jpg', __FILE__);?>);"></a>
-	<a href="http://www.acurax.com/services/website-redesign.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wrd" style="background:url(<?php echo plugins_url('images/wr.jpg', __FILE__);?>);"></a>
-</p>
+<b>Acurax Services >> </b><br>
+<a href="http://www.acurax.com/services/wordpress-designing-experts.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wtd" style="background:url(<?php echo plugins_url('images/wtd.jpg', __FILE__);?>);"></a>
 
+<a href="http://www.acurax.com/services/web-designing.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wd" style="background:url(<?php echo plugins_url('images/wd.jpg', __FILE__);?>);"></a>
+<a href="http://www.acurax.com/social-media-marketing-optimization/social-profile-design.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="spd" style="background:url(<?php echo plugins_url('images/spd.jpg', __FILE__);?>);"></a>
+<a href="http://www.acurax.com/services/website-redesign.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wrd" style="background:url(<?php echo plugins_url('images/wr.jpg', __FILE__);?>);"></a>
+</p>
+<?php } else { ?>
+<p class="widefat" style="padding:8px;width:99%;">
+<b>Acurax Services >> </b>
+<a href="http://www.acurax.com/services/blog-design.php" target="_blank">Wordpress Theme Design</a> | 
+<a href="http://www.acurax.com/services/web-designing.php" target="_blank">Website Design</a> | 
+<a href="http://www.acurax.com/social-media-marketing-optimization/social-profile-design.php" target="_blank">Social Profile Design</a> | 
+<a href="http://www.acurax.com/social-media-marketing-optimization/twitter-background-design.php" target="_blank">Twitter Background Design</a> | 
+<a href="http://www.acurax.com/social-media-marketing-optimization/facebook-page-design.php" target="_blank">Facebook Page Design</a>
+</p>
+<?php } ?>
 <div id="acx_fsmi_premium">
 <a style="margin: 8px 0px 0px 10px; float: left; font-size: 16px; font-weight: bold;" href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=highlight&utm_campaign=widget_plugin" target="_blank">Fully Featured - Premium Acurax Social Media Widget</a>
 <a style="margin: -14px 0px 0px 10px; float: left;" href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=highlight_yellow&utm_campaign=widget_plugin" target="_blank"><img src="<?php echo plugins_url('images/yellow.png', __FILE__);?>"></a>
@@ -349,9 +363,18 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 
 	<p class="submit">
 		<input type="submit" name="Submit" value="<?php _e('Update Acurax Social Icon', 'acx_widget_si_config' ) ?>" />
+		<a name="updated">.</a>
 	</p>
 
 </form>
+
+
+<?php if($_GET["status"] == "updated") { ?>
+<div style="display: block; background-color: rgb(255, 255, 224); padding: 10px; border: 1px solid rgb(230, 219, 85); font-family: arial; font-size: 13px; font-weight: bold; text-align: center; border-radius: 10px 10px 10px 10px;">Acurax Social Media Widget Update Successfully Completed - Thank You</div>
+<?php
+$acx_widget_si_current_version = "1.1";  // Current Version
+update_option('acx_widget_si_current_version', $acx_widget_si_current_version);
+} ?>
 
 <hr/>
 <?php socialicons_widget_comparison(1); ?> 

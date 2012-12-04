@@ -4,7 +4,7 @@ Plugin Name: Acurax Social Media Widget
 Plugin URI: http://www.acurax.com/products/floating-social-media-icon-plugin-wordpress/
 Description: A Simple Wordpress Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus. You can define icon style size for each widget.
 Author: Acurax 
-Version: 1.0
+Version: 1.1
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
@@ -74,11 +74,18 @@ function acx_social_widget_icon_premium()
 	include('premium.php');
 }
 
+function acx_social_widget_icon_misc() 
+{
+	include('smw-misc.php');
+}
+
 function acx_social_widget_icon_admin_actions()
 {
 	add_menu_page(  'Acx Social Media Widget Configuration', 'Acx Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/admin.ico' ); // 8 for admin
 	
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Icon Premium', 'Premium', 8, 'Acurax-Social-Widget-Premium' ,'acx_social_widget_icon_premium');
+	
+	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Icon Misc Settings', 'Misc', 8, 'Acurax-Social-Widget-Misc' ,'acx_social_widget_icon_misc');
 	
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Widget Help and Support', 'Help', 8, 'Acurax-Social-Widget-Help' ,'acx_social_widget_icon_help');
 }
