@@ -2,7 +2,7 @@
 require( dirname( __FILE__ ) . '../../../../wp-config.php' );
 $action = mysql_real_escape_string($_POST['action']); 
 $social_widget_icon_array_order = $_POST['recordsArray'];
-
+if (current_user_can('manage_options')) {
 if ($action == "updateRecordsListings")
 {
 	$social_widget_icon_array_order = serialize($social_widget_icon_array_order);
@@ -11,5 +11,5 @@ if ($action == "updateRecordsListings")
 	echo "Social Media Icon's Order Saved";
 	echo "</div><br>";
 }
-
+}
 ?>
