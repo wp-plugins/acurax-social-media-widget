@@ -3,7 +3,7 @@ Contributors: Acurax
 
 Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,facebook profile url,google plus,google+,google plus button
 Requires at least: 2.8
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: trunk
 
 Simple Wordpress Social Media Widget Plugin Where You Can Use Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and alignment.
@@ -101,6 +101,14 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 == Upgrade Notice ==
 
+= 1.2 =
+* February 20, 2012 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Added Option to disable highlighting menu on admin area
+* Added Option to disable highlighting plugin on plugin list
+* Improved CSS Styling
+* Improved Programming Structure
+* Stable Release
+
 = 1.1 =
 * December 04, 2012 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
 * Added Misc settings.
@@ -111,6 +119,14 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 * Graphics Improvements.
 
 == Changelog ==
+
+= 1.2 =
+* February 20, 2012 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Added Option to disable highlighting menu on admin area
+* Added Option to disable highlighting plugin on plugin list
+* Improved CSS Styling
+* Improved Programming Structure
+* Stable Release
 
 = 1.1 =
 * December 04, 2012 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)

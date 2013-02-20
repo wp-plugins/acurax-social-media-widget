@@ -44,37 +44,37 @@ function acurax_si_widget_simple($theme = "")
 		if	($acx_widget_si_twitter == "") { $twitter_link = ""; } else 
 		{
 			$twitter_link = "<a href='http://www.twitter.com/". $acx_widget_si_twitter ."' target='_blank' title='Visit Us On Twitter'>" . "<img src=" . 
-			plugins_url('images/themes/'. $acx_widget_si_touse_theme .'/twitter.png', __FILE__) . " border='0' alt='Visit Us On Twitter'></a>";
+			plugins_url('images/themes/'. $acx_widget_si_touse_theme .'/twitter.png', __FILE__) . " style='border:0px;' alt='Visit Us On Twitter' /></a>";
 		}
 		if	($acx_widget_si_facebook == "") { $facebook_link = ""; } else 
 		{
 			$facebook_link = "<a href='". $acx_widget_si_facebook ."' target='_blank' title='Visit Us On Facebook'>" . "<img src=" . plugins_url('images/themes/'
-			. $acx_widget_si_touse_theme .'/facebook.png', __FILE__) . " border='0' alt='Visit Us On Facebook'></a>";
+			. $acx_widget_si_touse_theme .'/facebook.png', __FILE__) . " style='border:0px;' alt='Visit Us On Facebook' /></a>";
 		}
 		if	($acx_widget_si_gplus == "") { $gplus_link = ""; } else 
 		{
 			$gplus_link = "<a href='". $acx_widget_si_gplus ."' target='_blank' title='Visit Us On GooglePlus'>" . "<img src=" . plugins_url('images/themes/'. 
-			$acx_widget_si_touse_theme .'/googleplus.png', __FILE__) . " border='0' alt='Visit Us On GooglePlus'></a>";
+			$acx_widget_si_touse_theme .'/googleplus.png', __FILE__) . " style='border:0px;' alt='Visit Us On GooglePlus' /></a>";
 		}
 		if	($acx_widget_si_pinterest == "") { $pinterest_link = ""; } else 
 		{
 			$pinterest_link = "<a href='". $acx_widget_si_pinterest ."' target='_blank' title='Visit Us On Pinterest'>" . "<img src=" . plugins_url(
-			'images/themes/'. $acx_widget_si_touse_theme .'/pinterest.png', __FILE__) . " border='0' alt='Visit Us On Pinterest'></a>";
+			'images/themes/'. $acx_widget_si_touse_theme .'/pinterest.png', __FILE__) . " style='border:0px;' alt='Visit Us On Pinterest' /></a>";
 		}
 		if	($acx_widget_si_youtube == "") { $youtube_link = ""; } else 
 		{
 			$youtube_link = "<a href='". $acx_widget_si_youtube ."' target='_blank' title='Visit Us On Youtube'>" . "<img src=" . plugins_url('images/themes/'. 
-			$acx_widget_si_touse_theme .'/youtube.png', __FILE__) . " border='0' alt='Visit Us On Youtube'></a>";
+			$acx_widget_si_touse_theme .'/youtube.png', __FILE__) . " style='border:0px;' alt='Visit Us On Youtube' /></a>";
 		}
 		if	($acx_widget_si_linkedin == "") { $linkedin_link = ""; } else 
 		{
 			$linkedin_link = "<a href='". $acx_widget_si_linkedin ."' target='_blank' title='Visit Us On Linkedin'>" . "<img src=" . plugins_url('images/themes/'
-			. $acx_widget_si_touse_theme .'/linkedin.png', __FILE__) . " border='0' alt='Visit Us On Linkedin'></a>";
+			. $acx_widget_si_touse_theme .'/linkedin.png', __FILE__) . " style='border:0px;' alt='Visit Us On Linkedin' /></a>";
 		}
 		if	($acx_widget_si_feed == "") { $feed_link = ""; } else 
 		{
 			$feed_link = "<a href='". $acx_widget_si_feed ."' target='_blank' title='Check Our Feed'>" . "<img src=" . plugins_url('images/themes/'
-			. $acx_widget_si_touse_theme .'/feed.png', __FILE__) . " border='0' alt='Check Our Feed'></a>";
+			. $acx_widget_si_touse_theme .'/feed.png', __FILE__) . " style='border:0px;' alt='Check Our Feed' /></a>";
 		}
 		$social_widget_icon_array_order = get_option('social_widget_icon_array_order');
 	$social_widget_icon_array_order = unserialize($social_widget_icon_array_order);
@@ -128,7 +128,7 @@ function acurax_widget_icons()
 	{
 	//*********************** STARTED DISPLAYING THE ICONS ***********************
 		echo "\n\n\n<!-- Starting Icon Display Code For Social Media Icon From Acurax International www.acurax.com -->\n";
-		echo "<div id='acx_social_widget' align='center'>";
+		echo "<div id='acx_social_widget' style='text-align:center;'>";
 		acurax_si_widget_simple();		
 		echo "</div>\n";
 		echo "<!-- Ending Icon Display Code For Social Media Icon From Acurax International www.acurax.com -->\n\n\n";
@@ -189,7 +189,7 @@ function DISPLAY_WIDGET_acurax_widget_icons_SC($atts)
 		echo ".scid-" . $acx_widget_si_sc_id . " img \n{\n";
 		echo "width:" . $size . "px !important; \n}\n";
 		echo "</style>";
-		echo "<div id='short_code_si_icon' align='center' class='acx_smw_float_fix scid-" . $acx_widget_si_sc_id . "'>";
+		echo "<div id='short_code_si_icon' style='text-align:center;' class='acx_smw_float_fix scid-" . $acx_widget_si_sc_id . "'>";
 		acurax_si_widget_simple($theme);
 		echo "</div>";
 		$content = ob_get_contents();
@@ -233,7 +233,7 @@ function acx_widget_si_pluign_finish_version_update()
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
-if($acx_widget_si_current_version != '1.1') // Current Version
+if($acx_widget_si_current_version != '1.2') // Current Version
 {
 if (get_option('social_widget_icon_array_order') != "")
 {
@@ -322,7 +322,7 @@ class acx_social_widget_icons_Widget extends WP_Widget
 		echo "width:" . $icon_size . "px; \n } \n";
 		echo "</style>";
 		echo "<div id='acurax_si_widget_simple' class='acx_smw_float_fix " . $this->get_field_id('widget') . "'";
-		if($icon_align != "") { echo " align='" . $icon_align . "'>"; } else { echo " align='center'>"; }
+		if($icon_align != "") { echo " style='text-align:" . $icon_align . ";'>"; } else { echo " style='text-align:center;'>"; }
 		acurax_si_widget_simple($icon_theme);
 		echo "</div>";
         // This is defined when you register a sidebar
@@ -445,12 +445,15 @@ Display
 
 
 <div id="fsmi_lp_f_group">
-<div class="left" style="padding-top: 23px;padding-bottom: 25px;">
+<div class="left" style="padding-top: 74px;padding-bottom: 74px;">
 Icon Function 
 </div> <!-- left -->
 <div class="right">
 <div class="fsmi_lp_compare_row_1_features">Link to Social Media Profile</div> <!-- fsmi_lp_compare_row_1_features -->
 <div class="fsmi_lp_compare_row_1_features highlighted">Share On Social Media</div> <!-- fsmi_lp_compare_row_1_features -->
+<div class="fsmi_lp_compare_row_1_features">Show Share on Posts/Pages</div> <!-- fsmi_lp_compare_row_1_features -->
+<div class="fsmi_lp_compare_row_1_features highlighted">Efficient Image Picker For Pinterest</div> <!-- fsmi_lp_compare_row_1_features -->
+<div class="fsmi_lp_compare_row_1_features highlighted">Define Social Media Meta for Each Page/Post</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
 
@@ -572,6 +575,9 @@ PHP Code Support
 <div class="n"></div>
 <div class="n"></div>
 <div class="n"></div>
+<div class="n"></div>
+<div class="n"></div>
+<div class="n"></div>
 <div class="y"></div>
 <div class="n"></div>
 <div class="y"></div>
@@ -642,12 +648,15 @@ PHP Code Support
 <div class="y"></div> <!-- y -->
 <div class="y"></div> <!-- y -->
 <div class="y"></div> <!-- y -->
+<div class="y"></div> <!-- y -->
+<div class="y"></div> <!-- y -->
+<div class="y"></div> <!-- y -->
 <div class="y" style="border-bottom:0px;"></div> <!-- y -->
 </div> <!-- row_3_shadow -->
 </div> <!-- row_3 -->
 </div> <!-- fsmi_lp_compare -->
 <div id="fsmi_lp_shadow"></div> <!-- fsmi_lp_shadow -->
-<div style="font-family: arial; font-size: 11px; color: darkgreen; float: left; margin-left: 39px; margin-bottom: 5px;">* Special Offer Price on Premium Version for Free Plugin Users Valid Only Until Next Free Version Upgrade - Click Order Now to Get Premium Version for $19.50</div>
+<!-- div style="font-family: arial; font-size: 11px; color: darkgreen; float: left; margin-left: 39px; margin-bottom: 5px;">* Special Offer Price on Premium Version for Free Plugin Users Valid Only Until Next Free Version Upgrade - Click Order Now to Get Premium Version for $19.50</div -->
 </div> <!-- fsmi_landing_holder -->
 
 
