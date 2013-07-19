@@ -4,7 +4,7 @@ Plugin Name: Acurax Social Media Widget
 Plugin URI: http://www.acurax.com/products/floating-social-media-icon-plugin-wordpress/
 Description: A Simple Wordpress Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus. You can define icon style size for each widget.
 Author: Acurax 
-Version: 1.2
+Version: 1.3
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
@@ -45,11 +45,11 @@ function Acurax_Widget_Links($links, $file) {
 	if ($file == $plugin) {
 	
 		return array_merge( $links, array( 
-			'<div id="plugin_page_links"><a href="http://www.acurax.com?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Acurax International') . '</a>',
-			'<a href="https://twitter.com/#!/acuraxdotcom" target="_blank">' . __('Acurax on Twitter') . '</a>',
-			'<a href="http://www.facebook.com/AcuraxInternational" target="_blank">' . __('Acurax on Facebook') . '</a>',
-			'<a href="http://www.acurax.com/services/web-designing.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Wordpress Theme Design') . '</a>',
-			'<a href="http://www.acurax.com/services/blog-design.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Wordpress Blog Design') . '</a>',
+			'<div id="plugin_page_links">',
+			'<a href="https://twitter.com/#!/acuraxdotcom" target="_blank">' . __('Follow us on Twitter') . '</a>',
+			'<a href="http://www.facebook.com/AcuraxInternational" target="_blank">' . __('Like us on Facebook') . '</a>',
+			'<a href="http://www.acurax.com/services/web-designing.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Need Your Website Redesigned?') . '</a>',
+			'<a href="http://www.acurax.com/services/blog-design.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank">' . __('Need a Custom Blog Design?') . '</a>',
 			'<a href="http://www.acurax.com/contact.php?utm_source=wp&utm_medium=link&utm_campaign=plugin-page" target="_blank" style="border:0px;">' . __('Contact Acurax') . '</a></div>' 
 		));
 	}
@@ -81,7 +81,7 @@ function acx_social_widget_icon_misc()
 
 function acx_social_widget_icon_admin_actions()
 {
-	add_menu_page(  'Acx Social Media Widget Configuration', 'Acx Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/admin.ico' ); // 8 for admin
+	add_menu_page(  'Acx Social Media Widget Configuration', 'Acx Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/acurax_international.png' ); // 8 for admin
 	
 	add_submenu_page('Acurax-Social-Widget-Settings', 'Acurax Social Icon Premium', 'Premium', 8, 'Acurax-Social-Widget-Premium' ,'acx_social_widget_icon_premium');
 	

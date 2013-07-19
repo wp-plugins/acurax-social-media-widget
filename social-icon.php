@@ -109,8 +109,8 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 			{ 
 				opacity: 0.5, cursor: 'move', update: function() 
 				{
-					var order = jQuery(this).sortable("serialize") + '&action=updateRecordsListings'; 
-					jQuery.post("<?php echo plugins_url( 'save_order.php' , (__FILE__) ); ?>", order, function(theResponse)
+					var order = jQuery(this).sortable("serialize") + '&action=acx_asmw_saveorder'; 
+					jQuery.post(ajaxurl, order, function(theResponse)
 					{
 						jQuery("#contentRight").html(theResponse);
 					}); 															 

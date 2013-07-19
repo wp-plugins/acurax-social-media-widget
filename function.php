@@ -213,7 +213,7 @@ function acx_widget_si_custom_admin_js()
 function acx_widget_si_pluign_upgrade_not_finished()
 {
     echo '<div class="error">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updation Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $total_arrays = 7; // Number Of Services
@@ -229,7 +229,7 @@ if ($social_widget_icon_array_count < $total_arrays)
 function acx_widget_si_pluign_finish_version_update()
 {
     echo '<div id="message" class="updated">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updation Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
@@ -263,10 +263,10 @@ if ($acx_widget_si_twitter == "" && $acx_widget_si_facebook == "" && $acx_widget
 function acx_widget_si_pluign_promotion()
 {
     echo '<div id="acx_td" class="error" style="background: none repeat scroll 0pt 0pt infobackground; border: 1px solid inactivecaption; padding: 5px;line-height:16px;">
-	<p>It looks like you have been enjoying using Acurax Social Media Widget plugin from <a href="http://www.acurax.com?utm_source=plugin&utm_medium=thirtyday&utm_campaign=thirtyday" title="Acurax Web Designing Company" target="_blank">Acurax</a> for atleast 30 days.Would you consider upgrading to <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=thirtyday&utm_campaign=widget_plugin" title="Premium Acurax Social Media Widget" target="_blank">premium version</a> to enjoy more features and help support continued development of the plugin? - Spreading the world about this plugin. Thank you for using the plugin</p>
+	<p>It looks like you have been enjoying using Acurax Social Media Widget plugin from <a href="http://www.acurax.com?utm_source=plugin&utm_medium=thirtyday&utm_campaign=thirtyday" title="Acurax Web Designing Company" target="_blank">Acurax</a> for atleast 30 days.Would you consider upgrading to <a href="admin.php?page=Acurax-Social-Widget-Premium#compare" title="Premium Acurax Social Media Widget">premium version</a> to enjoy more features and help support continued development of the plugin? - Spreading the world about this plugin. Thank you for using the plugin</p>
 	<p>
 	<a href="http://wordpress.org/support/view/plugin-reviews/acurax-social-media-widget/" class="button" style="color:black;text-decoration:none;padding:5px;margin-right:4px;" target="_blank">Rate it 5★\'s on wordpress</a>
-	<a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin&utm_medium=thirtyday&utm_campaign=widget_plugin" class="button" style="color:black;text-decoration:none;padding:5px;margin-right:4px;" target="_blank">Order Premium Version</a>
+	<a href="admin.php?page=Acurax-Social-Widget-Premium#compare" class="button" style="color:black;text-decoration:none;padding:5px;margin-right:4px;">Need More Features?</a>
 	<a href="admin.php?page=Acurax-Social-Widget-Premium&td=hide" class="button" style="color:black;text-decoration:none;padding:5px;margin-right:4px;margin-left:20px;">Don\'t Show This Again</a>
 </p>
 		  
@@ -668,5 +668,17 @@ $ad_2='<div id="ad_fsmi_2"> <a href="http://clients.acurax.com/floating-socialme
 <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings&utm_medium=banner&utm_campaign=plugin_yellow_order" target="_blank"><div id="ad_fsmi_2_button_order_link"></div></a></div> <!-- ad_fsmi_2_button_order --> ';
 if($ad=="" || $ad == 2) { echo $ad_2; } else if ($ad == 1) { echo $ad_1; } else { echo $ad_2; } 
 }
-
+function acx_asmw_saveorder_callback()
+{
+	global $wpdb;
+$social_widget_icon_array_order = $_POST['recordsArray'];
+if (current_user_can('manage_options')) {
+	$social_widget_icon_array_order = serialize($social_widget_icon_array_order);
+	update_option('social_widget_icon_array_order', $social_widget_icon_array_order);
+	echo "<div id='acurax_notice' align='center' style='width: 420px; font-family: arial; font-weight: normal; font-size: 22px;'>";
+	echo "Social Media Icon's Order Saved";
+	echo "</div><br>";
+}
+	die(); // this is required to return a proper result
+} add_action('wp_ajax_acx_asmw_saveorder', 'acx_asmw_saveorder_callback');
 ?>
