@@ -72,7 +72,7 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 		$social_widget_icon_array_order = array(0,1,2,3,4,5,6);
 		$social_widget_icon_array_order = serialize($social_widget_icon_array_order);
 		update_option('social_widget_icon_array_order', $social_widget_icon_array_order);
-		$acx_widget_si_current_version = "1.2";  // Current Version
+		$acx_widget_si_current_version = "1.3";  // Current Version
 		update_option('acx_widget_si_current_version', $acx_widget_si_current_version);
 	} else 
 	{
@@ -91,9 +91,6 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 		
 		$social_widget_icon_array_order = serialize($social_widget_icon_array_order);
 		update_option('social_widget_icon_array_order', $social_widget_icon_array_order);
-		$acx_si_smw_hide_advert = get_option('acx_si_smw_hide_advert');
-		
-		// Counting and Adding New Keys Ends Here
 	} //Normal page display else
 } //Main else
 
@@ -378,7 +375,7 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 <?php if($_GET["status"] == "updated") { ?>
 <div style="display: block; background-color: rgb(255, 255, 224); padding: 10px; border: 1px solid rgb(230, 219, 85); font-family: arial; font-size: 13px; font-weight: bold; text-align: center; border-radius: 10px 10px 10px 10px;">Acurax Social Media Widget Update Successfully Completed - Thank You</div>
 <?php
-$acx_widget_si_current_version = "1.2";  // Current Version
+$acx_widget_si_current_version = "1.3";  // Current Version
 update_option('acx_widget_si_current_version', $acx_widget_si_current_version);
 } ?>
 
