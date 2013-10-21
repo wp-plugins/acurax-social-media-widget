@@ -1,7 +1,6 @@
 <?php
 error_reporting(0);
 //*************** Include style.css in Header ********
-
 // Getting Option From DB *****************************	
 $acx_widget_si_theme = get_option('acx_widget_si_theme');
 $acx_widget_si_credit = get_option('acx_widget_si_credit');
@@ -16,17 +15,11 @@ $acx_widget_si_icon_size = get_option('acx_widget_si_icon_size');
 $acx_si_smw_menu_highlight = get_option('acx_si_smw_menu_highlight');
 $acx_si_smw_float_fix = get_option('acx_si_smw_float_fix');
 // *****************************************************
-function enqueue_acx_widget_si_style()
-{
-	wp_enqueue_style ( 'acx-widget-si-style', plugins_url('style.css', __FILE__) );
-}	add_action( 'wp_print_styles', 'enqueue_acx_widget_si_style' );
-
 // Check Credit Link
 function check_widget_acx_credit($yes,$no)
 { 	$acx_widget_si_credit = get_option('acx_widget_si_credit');
 	if($acx_widget_si_credit != "no") { echo $yes; } else { echo $no; } 
 }
-
 // Options Value Checker
 function acx_widget_option_value_check($option_name,$yes,$no)
 { 	$acx_widget_si_option_set = get_option($option_name);
@@ -34,7 +27,6 @@ function acx_widget_option_value_check($option_name,$yes,$no)
 }
 function acurax_si_widget_simple($theme = "")
 {
-
 	// Getting Globals *****************************	
 	global $acx_widget_si_theme, $acx_widget_si_credit , $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube,$acx_widget_si_gplus,
 	$acx_widget_si_linkedin, $acx_widget_si_pinterest, $acx_widget_si_feed, $acx_widget_si_icon_size;
@@ -81,21 +73,15 @@ function acurax_si_widget_simple($theme = "")
 	foreach ($social_widget_icon_array_order as $key => $value)
 	{
 		if ($value == 0) { echo $twitter_link; } 
-
 		else if ($value == 1) { echo $facebook_link; } 
-
 		else if ($value == 2) { echo $gplus_link; } 
-
 		else if ($value == 3) { echo $pinterest_link; } 
-
 		else if ($value == 4) { echo $youtube_link; } 
-
 		else if ($value == 5) { echo $linkedin_link; } 
 		
 		else if ($value == 6) { echo $feed_link; }
 	}
 } //acurax_si_widget_simple()
-
 function acx_widget_theme_check_wp_head() {
 	$template_directory = get_template_directory();
 	// If header.php exists in the current theme, scan for "wp_head"
@@ -116,8 +102,6 @@ function acx_widget_theme_check_wp_head() {
 	}
 } // theme check 
 add_action('admin_notices', 'acx_widget_theme_check_wp_head');
-
-
 function acurax_widget_icons()
 {
 	global $acx_widget_si_theme, $acx_widget_si_credit, $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube, 		
@@ -136,7 +120,6 @@ function acurax_widget_icons()
 	} // Chking null fields
 	
 } // Ending acurax_widget_icons();
-
 function extra_style_acx_widget_icon()
 {
 	global $acx_widget_si_icon_size;
@@ -147,7 +130,6 @@ function extra_style_acx_widget_icon()
 				echo "#acx_social_widget \n{\n";
 				echo "min-width:0px; \n";
 				echo "position: static; \n}\n";
-
 			if ($acx_si_smw_float_fix == "yes") 
 			{
 				echo ".acx_smw_float_fix a \n{\n";
@@ -157,7 +139,6 @@ function extra_style_acx_widget_icon()
 		echo "</style>\n<!-- Ending Styles For Social Media Icon From Acurax International www.acurax.com -->\n\n\n\n";
 }	add_action('admin_head', 'extra_style_acx_widget_icon'); // ADMIN
 	add_action('wp_head', 'extra_style_acx_widget_icon'); // PUBLIC 
-
 function acx_widget_si_admin_style()  // Adding Style For Admin
 {
 global $acx_si_smw_menu_highlight;
@@ -166,8 +147,6 @@ global $acx_si_smw_menu_highlight;
 	echo '<link rel="stylesheet" type="text/css" href="' .plugins_url('dynamic_admin_style.css', __FILE__). '">';
 	}
 }	add_action('admin_head', 'acx_widget_si_admin_style'); // ADMIN
-
-
 $acx_widget_si_sc_id = 0; // Defined to assign shortcode unique id
 function DISPLAY_WIDGET_acurax_widget_icons_SC($atts)
 {
@@ -196,19 +175,13 @@ function DISPLAY_WIDGET_acurax_widget_icons_SC($atts)
 		ob_end_clean();
 		return $content;
 } // DISPLAY_WIDGET_acurax_widget_icons_SC
-
 			
-
-
 function acx_widget_si_custom_admin_js()
 {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-core');
 	wp_enqueue_script('jquery-ui-sortable');
 }	add_action( 'admin_enqueue_scripts', 'acx_widget_si_custom_admin_js' );
-
-
-
 // wp-admin Notices >> Finish Upgrade
 function acx_widget_si_pluign_upgrade_not_finished()
 {
@@ -224,8 +197,10 @@ if ($social_widget_icon_array_count < $total_arrays)
 {
 	add_action('admin_notices', 'acx_widget_si_pluign_upgrade_not_finished',1);
 }
-
-
+function enqueue_acx_widget_si_style()
+{
+	wp_enqueue_style ( 'acx-widget-si-style', plugins_url('style.css', __FILE__) );
+}	add_action( 'wp_print_styles', 'enqueue_acx_widget_si_style' );
 function acx_widget_si_pluign_finish_version_update()
 {
     echo '<div id="message" class="updated">
@@ -240,8 +215,6 @@ if (get_option('social_widget_icon_array_order') != "")
 	add_action('admin_notices', 'acx_widget_si_pluign_finish_version_update',1);
 }
 }
-
-
 // wp-admin Notices >> Plugin not configured
 function acx_widget_si_pluign_not_configured()
 {
@@ -258,7 +231,6 @@ if ($acx_widget_si_twitter == "" && $acx_widget_si_facebook == "" && $acx_widget
 	add_action('admin_notices', 'acx_widget_si_pluign_not_configured',1);
 } // Chking If Plugin Not Configured
 } // Chking $social_widget_icon_array_count == $total_arrays
-
 // wp-admin Notices >> Plugin not configured
 function acx_widget_si_pluign_promotion()
 {
@@ -281,8 +253,6 @@ if (get_option('acx_widget_si_td') != "hide")
 add_action('admin_notices', 'acx_widget_si_pluign_promotion',1);
 }
 }
-
-
 // Starting Widget Code
 class acx_social_widget_icons_Widget extends WP_Widget
 {
@@ -297,21 +267,17 @@ class acx_social_widget_icons_Widget extends WP_Widget
         // Actually create the widget (widget id, widget name, options...)
         $this->WP_Widget( 'acx-social-icons-widget', 'Acurax Social Media Widget', $widget_options, $control_options );
     }
-
     // Output the content of the widget
     function widget($args, $instance) 
 	{
         extract( $args ); // Don't worry about this
-
         // Get our variables
         $title = apply_filters( 'widget_title', $instance['title'] );
 		$icon_size = $instance['icon_size'];
 		$icon_theme = $instance['icon_theme'];
 		$icon_align = $instance['icon_align'];
-
         // This is defined when you register a sidebar
         echo $before_widget;
-
         // If our title isn't empty then show it
         if ( $title ) 
 		{
@@ -328,7 +294,6 @@ class acx_social_widget_icons_Widget extends WP_Widget
         // This is defined when you register a sidebar
         echo $after_widget;
     }
-
 	// Output the admin options form
 	function form($instance) 
 	{
@@ -394,13 +359,11 @@ class acx_social_widget_icons_Widget extends WP_Widget
 			</p>
 		<?php
 	}
-
 	// Processes the admin options form when saved
 	function update($new_instance, $old_instance) 
 	{
 		// Get the old values
 		$instance = $old_instance;
-
 		// Update with any new values (and sanitise input)
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['icon_size'] = strip_tags( $new_instance['icon_size'] );
@@ -417,13 +380,9 @@ $ad_1 = '
 <p><b>This Plugin is the basic widget version of floating social media icon wordpress plugin. This plugin only support the icon pack and the widget. Premium Version of This plugin includes all the features of floating social media icon and a lot more. Premium version is same as the premium version of floating social media icon wordpress plugin.</b></p>
 <a name="compare"></a>
 <div id="fsmi_landing_holder">
-
 <div id="fsmi_lp_compare">
 <div class="row_1">
 <div class="fsmi_lp_compare_row_1_1"></div> <!-- fsmi_lp_compare_row_1_1 -->
-
-
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 173px;padding-bottom: 172px;">
 Display
@@ -442,8 +401,6 @@ Display
 <div class="fsmi_lp_compare_row_1_features highlighted">Add Custom Icons</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 74px;padding-bottom: 74px;">
 Icon Function 
@@ -456,7 +413,6 @@ Icon Function
 <div class="fsmi_lp_compare_row_1_features highlighted">Define Social Media Meta for Each Page/Post</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 23px;padding-bottom: 25px;">
 Animation
@@ -466,7 +422,6 @@ Animation
 <div class="fsmi_lp_compare_row_1_features highlighted">Mouse Over Effects</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 65px;padding-bottom: 65px;">
 Fly Animation Repeat Interval
@@ -479,9 +434,6 @@ Fly Animation Repeat Interval
 <div class="fsmi_lp_compare_row_1_features">Based On Page Views and Time</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
-
-
 <div id="fsmi_lp_f_group">
 <div class="left highlighted" style="padding-top: 24px;padding-bottom: 24px;">
 Multiple Fly Animation
@@ -491,7 +443,6 @@ Multiple Fly Animation
 <div class="fsmi_lp_compare_row_1_features">Can Choose Fly End Position</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 40px;padding-bottom: 41px;">
 Easy to Configure
@@ -502,7 +453,6 @@ Easy to Configure
 <div class="fsmi_lp_compare_row_1_features">Easy to Configure</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 90px;padding-bottom: 90px;">
 Widget Support
@@ -516,7 +466,6 @@ Widget Support
 <div class="fsmi_lp_compare_row_1_features">Seperate Default Opacity for Each</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 90px;padding-bottom: 90px;">
 Shortcode Support
@@ -530,9 +479,6 @@ Shortcode Support
 <div class="fsmi_lp_compare_row_1_features">Seperate Default Opacity for Each</div> <!-- fsmi_lp_compare_row_1_features -->
 </div> <!-- right -->
 </div> <!-- fsmi_lp_f_group -->
-
-
-
 <div id="fsmi_lp_f_group">
 <div class="left" style="padding-top: 106px;padding-bottom: 107px;border-bottom:0px;">
 PHP Code Support
@@ -658,8 +604,6 @@ PHP Code Support
 <div id="fsmi_lp_shadow"></div> <!-- fsmi_lp_shadow -->
 <!-- div style="font-family: arial; font-size: 11px; color: darkgreen; float: left; margin-left: 39px; margin-bottom: 5px;">* Special Offer Price on Premium Version for Free Plugin Users Valid Only Until Next Free Version Upgrade - Click Order Now to Get Premium Version for $19.50</div -->
 </div> <!-- fsmi_landing_holder -->
-
-
 <div id="ad_fsmi_2_button_order" style="float:left;margin-left: 445px;">
 <a href="http://clients.acurax.com/floating-socialmedia.php?utm_source=plugin_smw_settings&utm_medium=banner&utm_campaign=plugin_yellow_order" target="_blank"><div id="ad_fsmi_2_button_order_link"></div></a></div> <!-- ad_fsmi_2_button_order -->
 ';

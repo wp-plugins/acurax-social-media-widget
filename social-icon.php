@@ -7,37 +7,27 @@ if($_POST['acurax_social_widget_icon_hidden'] == 'Y')
 {	//Form data sent
 	$acx_widget_si_theme = $_POST['acx_widget_si_theme'];
 	update_option('acx_widget_si_theme', $acx_widget_si_theme);
-
 	$acx_widget_si_twitter = $_POST['acx_widget_si_twitter'];
 	update_option('acx_widget_si_twitter', $acx_widget_si_twitter);
-
 	$acx_widget_si_facebook = $_POST['acx_widget_si_facebook'];
 	update_option('acx_widget_si_facebook', $acx_widget_si_facebook);
-
 	$acx_widget_si_youtube = $_POST['acx_widget_si_youtube'];
 	update_option('acx_widget_si_youtube', $acx_widget_si_youtube);
-
 	$acx_widget_si_linkedin = $_POST['acx_widget_si_linkedin'];
 	update_option('acx_widget_si_linkedin', $acx_widget_si_linkedin);
-
 	$acx_widget_si_gplus = $_POST['acx_widget_si_gplus'];
 	update_option('acx_widget_si_gplus', $acx_widget_si_gplus);
-
 	$acx_widget_si_credit = $_POST['acx_widget_si_credit'];
 	update_option('acx_widget_si_credit', $acx_widget_si_credit);
-
 	$acx_widget_si_icon_size = $_POST['acx_widget_si_icon_size'];
 	update_option('acx_widget_si_icon_size', $acx_widget_si_icon_size);
-
 	$acx_widget_si_pinterest = $_POST['acx_widget_si_pinterest'];
 	update_option('acx_widget_si_pinterest', $acx_widget_si_pinterest);
 	
 	$acx_widget_si_feed = $_POST['acx_widget_si_feed'];
 	update_option('acx_widget_si_feed', $acx_widget_si_feed);
-
 	$social_widget_icon_array_order = get_option('social_widget_icon_array_order');
 	$acx_si_smw_hide_advert = get_option('acx_si_smw_hide_advert');
-
 		?>
 		<div class="updated"><p><strong><?php _e('Acurax Social Icon Widget Settings Saved!.' ); ?></strong></p></div>
 		<?php
@@ -65,8 +55,6 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 	if ($acx_widget_si_icon_size == "") { $acx_widget_si_icon_size = "32"; }
 	if ($acx_widget_si_theme == "") { $acx_widget_si_theme = "1"; }
 	if ($acx_si_smw_hide_advert == "") {	$acx_si_smw_hide_advert = "no"; }
-
-
 	if ($social_widget_icon_array_order == "") 
 	{
 		$social_widget_icon_array_order = array(0,1,2,3,4,5,6);
@@ -93,9 +81,7 @@ update_option('acx_widget_si_installed_date', $acx_widget_si_installed_date);
 		update_option('social_widget_icon_array_order', $social_widget_icon_array_order);
 	} //Normal page display else
 } //Main else
-
 ?>
-
 	<!--  To Update Drag and Drop -->
 	<script type="text/javascript">
 	jQuery(document).ready(function()
@@ -125,7 +111,6 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 <p class="widefat" style="padding:8px;width:99%;height: 75px;">
 <b>Acurax Services >> </b><br>
 <a href="http://www.acurax.com/services/wordpress-designing-experts.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wtd" style="background:url(<?php echo plugins_url('images/wtd.jpg', __FILE__);?>);"></a>
-
 <a href="http://www.acurax.com/services/web-designing.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wd" style="background:url(<?php echo plugins_url('images/wd.jpg', __FILE__);?>);"></a>
 <a href="http://www.acurax.com/social-media-marketing-optimization/social-profile-design.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="spd" style="background:url(<?php echo plugins_url('images/spd.jpg', __FILE__);?>);"></a>
 <a href="http://www.acurax.com/services/website-redesign.php?utm_source=plugin-page&utm_medium=banner&utm_campaign=fsmi" target="_blank" id="wrd" style="background:url(<?php echo plugins_url('images/wr.jpg', __FILE__);?>);"></a>
@@ -148,12 +133,8 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 </div> <!-- acx_fsmi_premium -->
 <?php } ?>
 <?php echo "<h2>" . __( 'Acurax Social Icons Options', 'acx_widget_si_config' ) . "</h2>"; ?>
-
 <form name="acurax_si_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 	<input type="hidden" name="acurax_social_widget_icon_hidden" value="Y">
-
-
-
 	<?php    echo "<h4>" . __( 'Select an icon style', 'acx_widget_si_config' ) . "</h4>"; ?>
 		
 	<p class="widefat" style="padding:8px;width:99%;">
@@ -191,12 +172,10 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/twitter.png', __FILE__) . ">"; 
 					} 	else 
-
 					if ($value == 1) 
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/facebook.png', __FILE__) . ">"; 
 					}	else 
-
 					if ($value == 2) 
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/googleplus.png', __FILE__) . ">"; 
@@ -206,12 +185,10 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/pinterest.png', __FILE__) . ">"; 
 					}	else
-
 					if ($value == 4) 
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/youtube.png', __FILE__) . ">"; 
 					}	else 
-
 					if ($value == 5) 
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/linkedin.png', __FILE__) . ">"; 
@@ -221,7 +198,6 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 					{
 						echo "<img src=" . plugins_url('images/themes/'. $i .'/feed.png', __FILE__) . ">"; 
 					}
-
 				}
 			?>			
 		</div>
@@ -231,7 +207,6 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 	echo "</div> <!-- acx_widget_si_theme_display -->";
 	// Ending The Theme List
 	?>
-
 	<p class="widefat" style="padding:8px;width:99%;margin-top:8px;">	<?php _e("Social Icon Size: " ); ?>
 		<select name="acx_widget_si_icon_size">
 			<option value="16"<?php if ($acx_widget_si_icon_size == "16") { echo 'selected="selected"'; } ?>>16px X 16px </option>
@@ -243,59 +218,42 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 		</select>
 		<?php _e("Select a social icon size" ); ?>
 	</p>
-
 		<?php    echo "<h4>" . __( 'Social Media Icon Display Order - Drag and Drop to Reorder', 'acx_widget_si_config' ) . "</h4>"; ?>
 	<div class="widefat" style="padding:8px;width:99%;margin-top:8px;">
 		<div id="contentLeft">
 			<ul>
 			<?php
-
 			foreach ($social_widget_icon_array_order as $key => $value)
 			{
 				?>
 				<li id="recordsArray_<?php echo $value; ?>">
 				<?php 
-
 				if ($value == 0) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/twitter.png', __FILE__) . " 
 					border='0'><br> Twitter"; 
 				} 	else 
-
-
-
 				if ($value == 1) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/facebook.png', __FILE__) . " 
 					border='0'><br> Facebook"; 
 				}	else 
-
-
-
 				if ($value == 2) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/googleplus.png', __FILE__) . " 
 					border='0'><br> Google Plus"; 
 				}	else
-
-
 				 
 				if ($value == 3) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/pinterest.png', __FILE__) . " 
 					border='0'><br> Pinterest"; 
 				}	else
-
-
-
 				if ($value == 4) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/youtube.png', __FILE__) . " 
 					border='0'><br> Youtube"; 
 				}	else 
-
-
-
 				if ($value == 5) 
 				{
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/linkedin.png', __FILE__) . " 
@@ -307,17 +265,14 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 					echo "<img src=" . plugins_url('images/themes/'. $acx_widget_si_theme .'/feed.png', __FILE__) . " 
 					border='0'><br> Rss Feed"; 
 				}
-
 					?>
 					</li>	<?php
 			}	?>
-
 			</ul>
 		</div>
 		<div id="contentRight"></div> <!-- contentRight -->
 		<?php _e("Drag and Reorder Icons (It will automatically save on reorder)" ); ?>
 	</div>
-
 <hr />
 		
 	<?php    echo "<h4>" . __( 'Social Media Settings', 'acx_widget_si_config' ) . "</h4>"; ?>	
@@ -327,31 +282,26 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 			<input type="text" name="acx_widget_si_twitter" value="<?php echo $acx_widget_si_twitter; ?>" size="50">
 		<?php _e("<b>Eg:</b> acuraxdotcom" ); ?>
 	</p>
-
 	<p class="widefat" style="padding:8px;width:99%;">
 		<?php _e("Facebook Page/Profile URL: " ); ?>
 			<input type="text" name="acx_widget_si_facebook" value="<?php echo $acx_widget_si_facebook; ?>" size="50">
 		<?php _e("<b>Eg:</b> http://www.facebook.com/AcuraxInternational" ); ?>
 	</p>
-
 	<p class="widefat" style="padding:8px;width:99%;">
 		<?php _e("Google Plus URL: " ); ?>
 			<input type="text" name="acx_widget_si_gplus" value="<?php echo $acx_widget_si_gplus; ?>" size="50">
 		<?php _e("Enter Your Complete Google Plus Url Starting With http://" ); ?>
 	</p>
-
 	<p class="widefat" style="padding:8px;width:99%;">
 		<?php _e("Pinterest URL: " ); ?>
 			<input type="text" name="acx_widget_si_pinterest" value="<?php echo $acx_widget_si_pinterest; ?>" size="50">
 		<?php _e("Enter Your Complete Pinterest Url Starting With http://" ); ?>
 	</p>
-
 	<p class="widefat" style="padding:8px;width:99%;">
 		<?php _e("Youtube URL: " ); ?>
 			<input type="text" name="acx_widget_si_youtube" value="<?php echo $acx_widget_si_youtube; ?>" size="50">
 		<?php _e("<b>Eg:</b> http://www.youtube.com/user/acuraxdotcom" ); ?>
 	</p>
-
 	<p class="widefat" style="padding:8px;width:99%;">
 		<?php _e("Linkedin URL: " ); ?>
 			<input type="text" name="acx_widget_si_linkedin" value="<?php echo $acx_widget_si_linkedin; ?>" size="50">
@@ -363,29 +313,23 @@ if ($acx_si_smw_acx_service_banners != "no") { ?>
 			<input type="text" name="acx_widget_si_feed" value="<?php echo $acx_widget_si_feed; ?>" size="50">
 		<?php _e("<b>Eg:</b> http://www.yourwebsite.com/feed" ); ?>
 	</p>
-
 	<p class="submit">
 		<input type="submit" name="Submit" value="<?php _e('Update Acurax Social Icon', 'acx_widget_si_config' ) ?>" />
 		<a name="updated">.</a>
 	</p>
-
 </form>
-
-
 <?php if($_GET["status"] == "updated") { ?>
 <div style="display: block; background-color: rgb(255, 255, 224); padding: 10px; border: 1px solid rgb(230, 219, 85); font-family: arial; font-size: 13px; font-weight: bold; text-align: center; border-radius: 10px 10px 10px 10px;">Acurax Social Media Widget Update Successfully Completed - Thank You</div>
 <?php
 $acx_widget_si_current_version = "1.3";  // Current Version
 update_option('acx_widget_si_current_version', $acx_widget_si_current_version);
 } ?>
-
 <hr/>
 <?php if($acx_si_smw_hide_advert == "no")
 { 
 socialicons_widget_comparison(1); 
 }
 ?> 
-
 <br>
 	<p class="widefat" style="padding:8px;width:99%;">
 		Something Not Working Well? Have a Doubt? Have a Suggestion? - <a href="http://www.acurax.com/contact.php" target="_blank">Contact us now</a> | Need a Custom Designed Theme For your Blog or Website? Need a Custom Header Image? - <a href="http://www.acurax.com/contact.php" target="_blank">Contact us now</a>

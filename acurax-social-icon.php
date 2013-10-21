@@ -4,25 +4,20 @@ Plugin Name: Acurax Social Media Widget
 Plugin URI: http://www.acurax.com/products/floating-social-media-icon-plugin-wordpress/
 Description: A Simple Wordpress Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus. You can define icon style size for each widget.
 Author: Acurax 
-Version: 1.3
+Version: 1.3.1
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
-
 /*
-
 Copyright 2008-current  Acurax International  ( website : www.acurax.com )
-
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
 of the License, or (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
@@ -36,8 +31,6 @@ function enqueue_acx_social_widget_icon_script()
 	wp_enqueue_script ( 'jquery' );
 }	add_action( 'get_header', 'enqueue_acx_social_widget_icon_script' );
 //*************** Include JS in Header Ends Here ********
-
-
 //*********** Include Additional Menu ********************
 function Acurax_Widget_Links($links, $file) {
 	$plugin = plugin_basename(__FILE__);
@@ -56,9 +49,7 @@ function Acurax_Widget_Links($links, $file) {
 	return $links;
 }	add_filter('plugin_row_meta', 'Acurax_Widget_Links', 10, 2 );
 //*********************************************************
-
 include('function.php');
-
 //*************** Admin function ***************
 function acx_social_widget_icon_admin() 
 {
@@ -68,17 +59,14 @@ function acx_social_widget_icon_help()
 {
 	include('social-help.php');
 }
-
 function acx_social_widget_icon_premium() 
 {
 	include('premium.php');
 }
-
 function acx_social_widget_icon_misc() 
 {
 	include('smw-misc.php');
 }
-
 function acx_social_widget_icon_admin_actions()
 {
 	add_menu_page(  'Acx Social Media Widget Configuration', 'Acx Social Media Widget Settings', 8, 'Acurax-Social-Widget-Settings','acx_social_widget_icon_admin',plugin_dir_url( __FILE__ ).'/images/acurax_international.png' ); // 8 for admin
