@@ -208,7 +208,7 @@ function acx_widget_si_pluign_finish_version_update()
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
-if($acx_widget_si_current_version != '1.3') // Current Version
+if($acx_widget_si_current_version != '1.3.1') // Current Version
 {
 if (get_option('social_widget_icon_array_order') != "")
 {
