@@ -108,7 +108,7 @@ function acurax_social_widget_icon_update( $plugin_data, $r )
 		if ( preg_match ( $regexp, $data, $matches) )
 		{
 			$changelog = (array) preg_split ( '~[\r\n]+~', trim ( $matches[1] ) );
-			$ret = '<div style="color: #c00;font-size: small; margin-top:8px;margin-bottom:8px">The Floating Social Media Plugin has been updated. Here is a change list, so you can see what\'s been changed or fixed:</div>';
+			$ret = '<div style="color: #c00;font-size: small; margin-top:8px;margin-bottom:8px">Acurax Social Media Widget Plugin has been updated. Here is a change list, so you can see what\'s been changed or fixed:</div>';
 			$ret .= '<div style="font-weight: normal;">';
 			$ret .= '<p style="margin: 5px 0; font-weight:bold; font-size:small">= Latest Version =</p>';
 			$ul = false;
