@@ -15,11 +15,7 @@ $acx_widget_si_icon_size = get_option('acx_widget_si_icon_size');
 $acx_si_smw_menu_highlight = get_option('acx_si_smw_menu_highlight');
 $acx_si_smw_float_fix = get_option('acx_si_smw_float_fix');
 // *****************************************************
-// Check Credit Link
-function check_widget_acx_credit($yes,$no)
-{ 	$acx_widget_si_credit = get_option('acx_widget_si_credit');
-	if($acx_widget_si_credit != "no") { echo $yes; } else { echo $no; } 
-}
+
 // Options Value Checker
 function acx_widget_option_value_check($option_name,$yes,$no)
 { 	$acx_widget_si_option_set = get_option($option_name);
@@ -82,6 +78,11 @@ function acurax_si_widget_simple($theme = "")
 		else if ($value == 6) { echo $feed_link; }
 	}
 } //acurax_si_widget_simple()
+// Check Credit Link
+function check_widget_acx_credit($yes,$no)
+{ 	$acx_widget_si_credit = get_option('acx_widget_si_credit');
+	if($acx_widget_si_credit != "no") { echo $yes; } else { echo $no; } 
+}
 function acx_widget_theme_check_wp_head() {
 	$template_directory = get_template_directory();
 	// If header.php exists in the current theme, scan for "wp_head"
@@ -186,7 +187,7 @@ function acx_widget_si_custom_admin_js()
 function acx_widget_si_pluign_upgrade_not_finished()
 {
     echo '<div class="error">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget Plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $total_arrays = 7; // Number Of Services
@@ -204,11 +205,11 @@ function enqueue_acx_widget_si_style()
 function acx_widget_si_pluign_finish_version_update()
 {
     echo '<div id="message" class="updated">
-		  <p><b>Thanks for updating Acurax Social Media Widget plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
+		  <p><b>Thanks for updating Acurax Social Media Widget Plugin... You need to visit <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Plugin\'s Settings Page</a> to Complete the Updating Process - <a href="admin.php?page=Acurax-Social-Widget-Settings&status=updated#updated">Click Here Visit Social Icon Plugin Settings</a></b></p>
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
-if($acx_widget_si_current_version != '1.3.1') // Current Version
+if($acx_widget_si_current_version != '1.3.2') // Current Version
 {
 if (get_option('social_widget_icon_array_order') != "")
 {
