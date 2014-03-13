@@ -109,6 +109,12 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 == Upgrade Notice ==
 
+= 1.3.3 =
+* March 13, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Added Theme Warning Ignore Option
+* Optimized Codes
+* Updated Option Description
+
 = 1.3.2 =
 * Jan 09, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
 * Fixed Spelling
@@ -143,6 +149,12 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 * Graphics Improvements.
 
 == Changelog ==
+
+= 1.3.3 =
+* March 13, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Added Theme Warning Ignore Option
+* Optimized Codes
+* Updated Option Description
 
 = 1.3.2 =
 * Jan 09, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)

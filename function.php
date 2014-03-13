@@ -14,6 +14,7 @@ $acx_widget_si_feed = get_option('acx_widget_si_feed');
 $acx_widget_si_icon_size = get_option('acx_widget_si_icon_size');
 $acx_si_smw_menu_highlight = get_option('acx_si_smw_menu_highlight');
 $acx_si_smw_float_fix = get_option('acx_si_smw_float_fix');
+$acx_si_smw_theme_warning_ignore = get_option('acx_si_smw_theme_warning_ignore');
 // *****************************************************
 
 // Options Value Checker
@@ -102,7 +103,10 @@ function acx_widget_theme_check_wp_head() {
 		echo "<div class=\"highlight\" style=\"width: 99%; margin-top: 10px; margin-bottom: 10px; border: 1px solid darkred;\">" . "Your theme needs to be fixed for plugins to work. To fix your theme, use the <a href=\"theme-editor.php\">Theme Editor</a> to insert <code>&lt;?php wp_head(); ?&gt;</code> just before the <code>&lt;/head&gt;</code> line of your theme's <code>header.php</code> file." . "</div>";
 	}
 } // theme check 
+if($acx_si_smw_theme_warning_ignore != "yes")
+{
 add_action('admin_notices', 'acx_widget_theme_check_wp_head');
+}
 function acurax_widget_icons()
 {
 	global $acx_widget_si_theme, $acx_widget_si_credit, $acx_widget_si_twitter, $acx_widget_si_facebook, $acx_widget_si_youtube, 		
@@ -209,7 +213,7 @@ function acx_widget_si_pluign_finish_version_update()
 		  </div>';
 }
 $acx_widget_si_current_version = get_option('acx_widget_si_current_version');
-if($acx_widget_si_current_version != '1.3.2') // Current Version
+if($acx_widget_si_current_version != '1.3.3') // Current Version
 {
 if (get_option('social_widget_icon_array_order') != "")
 {
