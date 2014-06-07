@@ -1,18 +1,18 @@
-﻿=== Social Media Widget by Acurax (formerly  Acurax Social Media Widget) ===
+﻿=== Social Media Widget by Acurax (aka  Acurax Social Media Widget) ===
 Contributors: Acurax 
 
-Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,social media logos,social media buttons,google+,google plus button
+Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,business social media,pinterest,social media marketing tools,social profile link,twitter facebook,social media button,pinterest button,rss icon,social media logos,social media buttons,google+,google plus button
 Requires at least: 2.8
 Tested up to: 3.9.1
 Stable tag: trunk
 
-Simple Wordpress Social Media Widget Plugin, A Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and Order.
+Social Media Widget Plugin, A Simple Social Icon Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and Order.
 
 == Description ==
 
-A Simple Wordpress Social Media Widget Plugin Which Allow You To Add Widget Which Links Social Media Icons to Your Social Media Profiles Twitter,Facebook,Pinterest,Youtube,Rss Feed,Linkedin,google plus...
+A Simple Wordpress Social Media Widget Plugin Which Allow You To Add Widgets Which Links Social Media Buttons to Your Social Network Profiles Twitter, Facebook,Pinterest, Youtube, Rss Feed, Linkedin, Google plus...
 
-You can make the icons to appear using widget , on your sidebar.
+Display Social Media Icons Using Widgets , on your sidebar.
 
 	★ Multiple Social Media Icon Widget Support
 
@@ -20,15 +20,16 @@ You can make the icons to appear using widget , on your sidebar.
 	
 	★ Drag and Drop Reorder Icons
 	
-	★ Easy to configure user interface
+	★ Easy to Configure UI
 	
-	★ Social Media Icon Size Selection Support
+	★ Choose Social Media Icon Size
 	
 	★ Support Essential Social Medias Only
 	
 	★ Pinterest Support
 
-
+We have 20+ icon styles to choose from, so that this will be a great plugin for your personal and business social media integration. You can have any number of social media bar
+	
 We Always Look Forward Your Comments and Suggestions for Future Updates. You can Submit Your Comments at our [Website](http://www.acurax.com/ "Website Designing")
 
 
@@ -38,6 +39,7 @@ This Social Media Widget Plugin is developed and maintained by [Acurax Internati
 
 [Acurax](http://www.acurax.com/ "Acurax Web Design Development Service") Provide [Wordpress Theme Design](http://www.acurax.com/services/web-designing.php "Wordpress Theme Design Service") and [Development](http://www.acurax.com/services/web-development.php "Wordpress Development") Services.
 
+After Installation of this Social Media Integration Plugin,Dont Forgot to Cast Your Vote on Compatibility :) Thanks for trying...
 
 == Installation ==
 
@@ -60,7 +62,7 @@ To hide an icon, Just don't give any value for that button link.. it will automa
 
 Plugin Support Social Media Widget, You can have **many number of widgets where on each social media widget you can configure the Social Media Icons size and Icon Design/Style**.
 
-To add a social media widget to your sidebar.. you theme must support sidebars. Go to **Apperance >> Widgets**,to add "Acurax Social Media Widget" widget to your sidebar.
+To add a social media widget to your sidebar.. you theme must support sidebars. Go to **Appearance >> Widgets**,to add "Acurax Social Media Widget" widget to your sidebar.
 
 = How Many Social Media Widget Can i use? =
 
@@ -84,7 +86,7 @@ Most of all the plugins have more and more options which is only easily understa
 
 = Can i add my own icons for the social media profiles? =
 
-Sorry, Its not supported in this version, but we will be releasing a premium version which support a lot more easy options with in few weeks, we are on its development.
+Sorry, Its not supported in this version, but available on our premium version
 
 = After Upgrading Plugin, Icons are not showing. why? =
 
