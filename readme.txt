@@ -1,12 +1,12 @@
-﻿=== Acurax Social Media Widget ===
+﻿=== Social Media Widget by Acurax (formerly  Acurax Social Media Widget) ===
 Contributors: Acurax 
 
-Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,facebook profile url,google plus,google+,google plus button
+Tags: Social Media Widget,social,social icon widget,social media icon,socialmedia,pinterest widget,fb widget,facebook button,pinterest,social icon,social profile link,twitter facebook,social media button,pinterest button,rss icon,social media logos,social media buttons,google+,google plus button
 Requires at least: 2.8
 Tested up to: 3.9.1
 Stable tag: trunk
 
-Simple Wordpress Social Media Widget Plugin Where You Can Use Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and alignment.
+Simple Wordpress Social Media Widget Plugin, A Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and Order.
 
 == Description ==
 
@@ -16,7 +16,7 @@ You can make the icons to appear using widget , on your sidebar.
 
 	★ Multiple Social Media Icon Widget Support
 
-	★ Each Social Media Widget Can Have Seperate Icon Theme and Icon Size 
+	★ Each Social Media Widget Can Have Separate Icon Theme and Icon Size 
 	
 	★ Drag and Drop Reorder Icons
 	
@@ -45,16 +45,16 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Then Visit Plugin Configuration Settings and select a theme and size for icons for the social media widget. configure your social profile url. You are done!
 
-You need to go to Apperance >> Widgets to add "Acurax Social Media Widget" Widget to your sidebar
+You need to go to Appearance >> Widgets to add "Acurax Social Media Widget" Widget to your sidebar
 
 
-After Installation,Dont Forgot to Cast Your Vote on Combatibility :) Thanks for trying...
+After Installation,Dont Forgot to Cast Your Vote on Compatibility :) Thanks for trying...
 
 == Frequently Asked Questions ==
 
 = How can i hide a social media icon? =
 
-To hide an icon, Just dont give any value for that button link.. it will automatically gets hiden.
+To hide an icon, Just don't give any value for that button link.. it will automatically gets hidden.
 
 = How can i use the social media icon widget? =
 
@@ -76,11 +76,11 @@ We have added an option in the misc page to enable and disable theme conflict fi
 
 = How can i help the development of this plugin? =
 
-Acurax Provide Most of all the wordpress related services like website design and development including plugin development, theme design and coding, Graphics Design range from header image designing to complete design and marketing of a website. we can do your projects. So here you get what u needs to get done and we getting business so a part of that can be used for the time that we spend to develop plugins like this social media widget.
+Acurax Provide Most of all the Wordpress related services like website design and development including plugin development, theme design and coding, Graphics Design range from header image designing to complete design and marketing of a website. we can do your projects. So here you get what u needs to get done and we getting business so a part of that can be used for the time that we spend to develop plugins like this social media widget.
 
 = There are a lot of other social media icon plugins, but why this plugin? =
 
-Most of all the plugins have more and more options which is only easly understandable by advanced users, those have a bunch of social media profile integrations. But in our case we choosen the must to have icons and made it perfect styling.. More icons on website make it look bad.. So use the essentials with sexy display.
+Most of all the plugins have more and more options which is only easily understandable by advanced users, those have a bunch of social media profile integrations. But in our case we choosen the must to have icons and made it perfect styling.. More icons on website make it look bad.. So use the essentials with sexy display.
 
 = Can i add my own icons for the social media profiles? =
 
@@ -108,6 +108,13 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 4. Icon Size Selection, Reorder Icons Drag and Drop, Social Media Profile Link Settings. (Low Quality Screenshot To Load Fast)
 
 == Upgrade Notice ==
+
+= 2.0 =
+* June 07, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Stable Release
+* Optimized Codes
+* Added Troubleshoot Menu
+* Configuration Style Improvements
 
 = 1.3.3 =
 * March 13, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
@@ -149,6 +156,13 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 * Graphics Improvements.
 
 == Changelog ==
+
+= 2.0 =
+* June 07, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Stable Release
+* Optimized Codes
+* Added Troubleshoot Menu
+* Configuration Style Improvements
 
 = 1.3.3 =
 * March 13, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)

@@ -11,7 +11,7 @@ if($acx_si_smw_hide_advert == "no")
 <?php } ?>
 <h2>Acurax Social Media Widget - Wordpress Plugin - Help/Support</h2>
 <p>Thank you for using Acurax Social Media Widget Plugin For Your Wordpress Social Media Profile Linking Need.</p>
-<h3><a href="http://clients.acurax.com/link.php?id=14" target="_blank">Click here to open the FAQ and Help Page</a></h3>
+<h3><a href="http://clients.acurax.com/link.php?id=14" target="_blank" class="button">Click here to open the FAQ and Help Page</a></h3>
 <?php 
 if($acx_si_smw_hide_advert == "no")
 {
