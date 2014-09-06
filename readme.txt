@@ -3,7 +3,7 @@ Contributors: Acurax
 
 Tags: Social Media Widget,social icon widget,social media icon,socialmedia,fb widget,business social media,pinterest,social media marketing tools,social profile link,twitter facebook,social media button,pinterest button,social media logos,social media buttons,google plus button
 Requires at least: 2.8
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: trunk
 
 Social Media Widget Plugin, A Simple Social Icon Widget To Show Essential Social Media Icons - Can Select Social Media Icon Style , Size and Order.
