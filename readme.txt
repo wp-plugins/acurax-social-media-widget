@@ -115,6 +115,11 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 == Upgrade Notice ==
 
+= 2.1 =
+* Sep 18, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Stable Release
+* Minor Bud Fixes
+
 = 2.0 =
 * June 07, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
 * Stable Release
@@ -162,6 +167,11 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 * Graphics Improvements.
 
 == Changelog ==
+
+= 2.1 =
+* Sep 18, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
+* Stable Release
+* Minor Bud Fixes
 
 = 2.0 =
 * June 07, 2014 | NOTE: UPGRADING PLUGIN WILL NOT CHANGE YOUR SETTINGS/CONFIGURATION.. UPGRADE WITH CONFIDENCE :)
